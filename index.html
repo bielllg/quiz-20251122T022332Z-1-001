@@ -3,41 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Médico Avançado 🩺</title>
+    <title>Bem-vindo ao Quiz Médico 🩺</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="home-body">
     <main class="container">
         <header>
-            <h1><span class="icon">⚕️</span> Quiz de Medicina</h1>
+            <h1><span class="icon">⚕</span> Quiz de Medicina</h1>
         </header>
 
-        <section class="card quiz-card">
-            <div id="question-container">
-                <p class="question-count-display">Pergunta <span id="current-q-number">1</span> de <span id="total-questions-display">15</span></p>
-                <h2 id="question-text">Pergunta será carregada aqui...</h2>
-                
-                <div id="answer-buttons" class="btn-grid"></div>
-            </div>
+        <section class="card home-card">
+            <h2>Teste seus Conhecimentos Médicos!</h2>
+            <p>Prepare-se para responder a 10 perguntas desafiadoras sobre diversas áreas da medicina, desde Cardiologia até Farmacologia.</p>
             
-            <button id="next-button" class="btn next-btn primary" disabled>Próxima</button>
-            
-            <div id="result-container" class="hide">
-                <h2>✅ Quiz Finalizado!</h2>
-                <p class="final-score">Sua pontuação final: <span id="score-display">0</span>/50</p>
-                
-                <div class="save-score">
-                    <input type="text" id="player-name" placeholder="Seu nome no Placar" maxlength="50">
-                    <button id="save-score-btn" class="btn primary">Salvar Pontuação</button>
-                </div>
-                
-                <button id="restart-button" class="btn secondary">Tentar Novamente</button>
-            </div>
+            <ul class="quiz-info-list">
+                <li>🎯 Nível: Avançado</li>
+                <li>📝 Total de Perguntas: 15</li>
+                <li>⏱️ Objetivo: Acertar o máximo de questões com seu conhecimento</li>
+            </ul>
+
+            <a href="index2.html" class="btn primary btn-start">
+                Começar Quiz
+            </a>
         </section>
-
-        </main>
-
-    <script src="java.js"></script>
+    </main>
 </body>
 </html>

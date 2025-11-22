@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Médico Avançado 🩺</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1><span class="icon">⚕️</span> Quiz de Medicina</h1>
+        </header>
+
+        <section class="card quiz-card">
+            <div id="question-container">
+                <p class="question-count-display">Pergunta <span id="current-q-number">1</span> de <span id="total-questions-display">15</span></p>
+                <h2 id="question-text">Pergunta será carregada aqui...</h2>
+                
+                <div id="answer-buttons" class="btn-grid"></div>
+            </div>
+            
+            <button id="next-button" class="btn next-btn primary" disabled>Próxima</button>
+            
+            <div id="result-container" class="hide">
+                <h2>✅ Quiz Finalizado!</h2>
+                <p class="final-score">Sua pontuação final: <span id="score-display">0</span>/50</p>
+                
+                <div class="save-score">
+                    <input type="text" id="player-name" placeholder="Seu nome no Placar" maxlength="50">
+                    <button id="save-score-btn" class="btn primary">Salvar Pontuação</button>
+                </div>
+                
+                <button id="restart-button" class="btn secondary">Tentar Novamente</button>
+            </div>
+        </section>
+
+        </main>
+
+    <script src="java.js"></script>
+</body>
+</html>
+
+
